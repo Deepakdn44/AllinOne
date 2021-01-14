@@ -1,0 +1,36 @@
+package parameterization;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+
+
+public class DataProviders {
+
+	@DataProvider(name="dp1")
+	public static Object[][] getData(Method m){
+		Object[][] data = null;
+		if(m.getName().equals("loginTest")) {
+			data = new Object[2][2];
+			
+			data[0][0] = "deepakdn444@gmail.com";
+			data[0][1] = "saadadad";		
+			
+			data[1][0] = "sadasdsadda@gmail.com";
+			data[1][1] = "saadadad";
+		}else if(m.getName().equals("userReg")) {
+			data = new Object[2][3];
+			
+			data[0][0] = "deepakdn444@gmail.com";
+			data[0][1] = "saadadad";
+			data[0][2] = "sajghdkjasks";
+			
+			data[1][0] = "sadasdsadda@gmail.com";
+			data[1][1] = "saadadad";
+			data[1][2] = "sadhskjadkjhvbdf";
+		}
+		return data;
+	}
+	
+}

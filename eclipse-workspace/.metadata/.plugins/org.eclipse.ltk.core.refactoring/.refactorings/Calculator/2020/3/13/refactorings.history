@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Allien.java&apos; to &apos;Calculator/src/com.deepu&apos;&#x0D;&#x0A;- Original project: &apos;Calculator&apos;&#x0D;&#x0A;- Destination element: &apos;Calculator/src/com.deepu&apos;&#x0D;&#x0A;- Original element: &apos;constructors.Allien.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.deepu" element1="/src&lt;constructors{Allien.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1584891192252" units="1" version="1.0"/>
+</session>

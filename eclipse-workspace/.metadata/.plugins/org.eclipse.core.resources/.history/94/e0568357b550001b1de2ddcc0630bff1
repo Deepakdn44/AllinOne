@@ -1,0 +1,19 @@
+package ReflectionExample;
+
+public class Rough {
+
+	public static void main(String[] args) {
+		/*Example obj = new Example()
+			{
+				public void show() {
+					System.out.println("Hello");
+				}
+			};
+		obj.show();*/
+		
+		Example obj = () {
+			System.out.println("Hello");
+		};
+		obj.show();
+	}
+}

@@ -1,0 +1,37 @@
+package webdriverMaven;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LogIn {
+	
+	@Given("User navigates to facebook")
+	public void user_navigates_to_facebook() {
+	   System.out.println("@Given ---- User navigates to facebook.com");
+	}
+
+	@When("User validates the title of the homepage")
+	public void user_validates_the_title_of_the_homepage() {
+	    System.out.println("@When ----- USer validates homepage title");
+	}
+
+	@Then("User entered [a-zA-Z]{1, } username")
+	public void user_entered_the_valid_username() {
+	    System.out.println("@Then ----- User enetered the username");
+	}
+
+	@Then("User entered [a-zA-Z]{1, } password")
+	public void user_entered_the_valid_password() {
+	    System.out.println("@And----- User entered the password");
+	}
+
+	@Then("User should be successfully login")
+	public void user_should_be_successfully_login() {
+	   System.out.println("@Then -- User successfully logged in");
+	}
+
+
+
+}
+

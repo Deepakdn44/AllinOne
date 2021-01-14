@@ -1,0 +1,15 @@
+package example;
+
+public class Practice {
+
+	
+	public static void main(String[] args) {
+		
+		Example e1 = new Example(1);
+		Example e2 = new Example(1);
+		
+		System.out.println(e1);
+		System.out.println(e2);
+	}
+}
+

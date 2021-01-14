@@ -1,0 +1,19 @@
+
+Feature: LogIn
+  In Order to perform successfull login
+  As a user
+  I want to enter correct username and password
+
+  @tag1
+  Scenario: In order to verify login to facebook
+    Given User navigates to facebook
+    When User validates the title of the homepage
+    Then User entered the "valid" username
+    And User entered the "valid" password
+    Then User should  "successfully" login
+    
+ Examples: 
+ 	| username |password | loginType |
+	| valid    | valid   | should    |
+	| invalid  | invalid | shouldnot |
+

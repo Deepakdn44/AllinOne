@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+   
+    <!-- Console Appender -->
+    
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd/MM/yyyy HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+    
+    
+     <!-- File Appender -->
+    
+     <appender name="fileAppender" class="org.apache.log4j.FileAppender">
+        <param name="File" value="C:/Users/user/eclipse-workspace/Lof4jExample/src/test/java/log4j.log" />
+        <param name="Append" value="false" />
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="%d{dd/MM/yyyy HH:mm:ss} %-5p %c{2} - %m%n"/>
+        </layout>
+    </appender>
+    
+   <!-- Email Appender -->
+
+
+
+-<appender class="SecureSMTPAppender" name="ERROR_MAIL">
+
+<param name="SMTPUsername" value="deepakdn444@gmail.com"/>
+
+<param name="SMTPPassword" value="Virat18@444"/>
+
+<param name="To" value="deepakdn444@gmail.com"/>
+
+<param name="From" value="deepakdn444@gmail.com"/>
+
+<param name="Subject" value="Log4j Error in Project"/>
+
+<param name="SMTPHost" value="smtp.gmail.com"/>
+
+<param name="BufferSize" value="10"/>
+
+
+-<layout class="org.apache.log4j.PatternLayout">
+
+<param name="ConversionPattern" value="%d{dd/MM/yyyy HH:mm:ss} %-5p %c{2} - %m%n"/>
+
+</layout>
+
+
+-<filter class="org.apache.log4j.varia.LevelRangeFilter">
+
+<param name="LevelMin" value="ERROR"/>
+
+<param name="LevelMax" value="FATAL"/>
+
+</filter>
+</appender>
+    
+    <!-- HTML Appender -->
+
+
+
+-<appender class="org.apache.log4j.DailyRollingFileAppender" name="htmlAppender">
+
+<param name="File" value="C:/Users/user/eclipse-workspace/Lof4jExample/src/test/java/log4j.html"/>
+
+<param name="DatePattern" value="'.'yyyy-MM-dd-HH'.html'"/>
+
+<layout class="org.apache.log4j.HTMLLayout"/>
+
+<!--/layout-->
+
+
+</appender>
+    
+     
+    <!-- ROOT Configuration -->
+     
+    <root>
+       <priority value ="debug" />  
+        <appender-ref ref="console" />
+        <appender-ref ref="fileAppender" />
+        <appender-ref ref="ERROR_MAIL" />
+        <appender-ref ref="htmlAppender" />
+       
+       
+
+    </root>
+    
+</log4j:configuration>

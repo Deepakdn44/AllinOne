@@ -1,0 +1,16 @@
+package testcases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestCAse2 {
+
+	@Test
+	public void validateTitles() {
+		String expected = "Yahoo.com";//Excell
+		String actual = "Gmail.com";//Selenium
+		
+		//Assert.assertEquals(actual, expected);
+		Assert.assertTrue(false, "Element not found");
+	}
+}

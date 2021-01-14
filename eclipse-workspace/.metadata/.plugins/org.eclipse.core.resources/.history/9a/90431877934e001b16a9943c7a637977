@@ -1,0 +1,12 @@
+package onTestFailure;
+
+import org.openqa.selenium.By;
+
+public class LogIn extends Basetest{
+	
+	public void doLogin() {
+		driver.findElement(By.id("Email")).sendKeys("deepakdn444@gmail.com");
+		driver.findElement(By.xpath(xpathExpression))
+	}
+
+}

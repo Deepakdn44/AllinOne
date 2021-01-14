@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+<groups>
+<run>
+<exclude name="Functional"></exclude>
+</run>
+</groups>
+	<test name="Log in Test">
+		<classes>
+			<class name="testcases.TestCase1" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="ValidateTitle Test">
+		<classes>
+
+			<class name="testcases.TestCAse2" />
+
+		</classes>
+	</test> <!-- Test -->
+	<test name="Dependency Test">
+		<classes>
+			<class name="testcases.TestCaseDependencies" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

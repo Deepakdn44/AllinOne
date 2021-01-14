@@ -1,0 +1,34 @@
+package example;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Practice {
+
+	
+	public static void main(String[] args) {
+		
+		Example e1 = new Example(1);
+		Example e2 = new Example(1);
+		
+		Map<Example, String> map = new HashMap<Example, String>();
+		
+		map.put(e1, "Deepu");
+		map.put(e2, "Deepu");
+		
+		System.out.println(map.size());
+		
+		Integer i = new Integer(1);
+		Integer i2 = new Integer(1);
+		
+		Map<Integer, String> map1 = new HashMap<Integer, String>();
+		
+		map1.put(i, "Deepu");
+		map1.put(i2, "Deepu");
+		
+		System.out.println(map1.size());
+		
+		
+	}
+}
+

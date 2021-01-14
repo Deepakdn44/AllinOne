@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-04T21:02:34 IST" name="Suite" finished-at="2021-01-04T21:02:34 IST" duration-ms="79">
+    <groups>
+    </groups>
+    <test started-at="2021-01-04T21:02:34 IST" name="Test" finished-at="2021-01-04T21:02:34 IST" duration-ms="79">
+      <class name="rerun.LogInTest">
+        <test-method signature="doLogin()[pri:1, instance:rerun.LogInTest@7ee955a8]" started-at="2021-01-04T21:02:34 IST" name="doLogin" finished-at="2021-01-04T21:02:34 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="registerUser()[pri:2, instance:rerun.LogInTest@7ee955a8]" started-at="2021-01-04T21:02:34 IST" name="registerUser" finished-at="2021-01-04T21:02:34 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+      </class> <!-- rerun.LogInTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
